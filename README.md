@@ -10,7 +10,7 @@ Get your location code [here]
 
 To save the weather information in file:
 ```
-$ weather.py 24060 --output='output.txt'
+$ weather.py 2459115 --output='output.txt'
 ```
 ### Example usage for new york:
     $ python yhweather.py 2459115
