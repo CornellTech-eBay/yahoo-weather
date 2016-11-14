@@ -1,0 +1,49 @@
+tornado
+tropical storm
+hurricane
+severe thunderstorms
+thunderstorms
+hail
+mostly cloudy (night)
+mostly cloudy (day)
+dust
+foggy
+haze
+smoky
+blustery
+windy
+cold
+cloudy
+mixed rain and hail
+isolated thunderstorms
+scattered thunderstorms
+scattered thunderstorms
+scattered showers
+thundershowers
+isolated thundershowers
+,
+freezing drizzle
+drizzle
+freezing rain
+showers
+showers
+,
+scattered snow showers
+heavy snow
+mixed rain and snow
+mixed rain and sleet
+mixed snow and sleet
+snow flurries
+light snow showers
+blowing snow
+snow showers
+snow
+sleet
+,
+partly cloudy (night)
+partly cloudy (day)
+clear (night)
+sunny
+fair (night)
+fair (day)
+hot

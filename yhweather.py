@@ -34,7 +34,15 @@ def get_weather(location):
     result = html.read().decode('utf-8')
     data = json.loads(result)
 
-    return (data['query']['results']['channel']['title'], data['query']['results']['channel']['item']['condition']['text'])
+    description = data['query']['results']['channel']['title']
+    text = data['query']['results']['channel']['item']['condition']['text']
+    temp_today = data['query']['results']['channel']['item']['forecast'][0]
+    temp_today = (float(temp_today['high']) + float(temp_today['low'])) / 2
+    temp_future = data['query']['results']['channel']['item']['forecast'][8]
+    temp_future = (float(temp_future['high']) + float(temp_future['low'])) / 2
+    temp_diff = temp_future - temp_today
+
+    return ([description, text, temp_today, temp_future, temp_diff])
 
 
 def create_cli_parser():
