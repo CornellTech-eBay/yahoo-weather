@@ -32,4 +32,18 @@ def weather_category():
             weather[current_cat].append(weather_str)
     return weather
 
+def weather_keywords():
+    keywords = open("./yahooWeather/weather_keywords.txt", "rb")
+    keywords.readline()
+
+    # weather in 4 categories : overcast = [], rain = [], snow = [], sunny = []
+    weather = [[], [], [],[]]
+    current_cat = 0
+    for line in keywords:
+        word = line.strip().decode('utf-8')
+        if word == ",":
+            current_cat += 1
+        else:
+            weather[current_cat].append(word)
+    return weather
 # print (weather_category())

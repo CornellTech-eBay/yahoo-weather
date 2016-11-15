@@ -4,6 +4,7 @@ hurricane
 severe thunderstorms
 thunderstorms
 hail
+mostly cloudy
 mostly cloudy (night)
 mostly cloudy (day)
 dust
@@ -40,10 +41,13 @@ snow showers
 snow
 sleet
 ,
+partly cloudy
 partly cloudy (night)
 partly cloudy (day)
 clear (night)
+clear
 sunny
 fair (night)
 fair (day)
 hot
+fair
