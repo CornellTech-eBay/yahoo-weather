@@ -15,7 +15,7 @@ def parse_XML():
     with open("./yahooWeather/cleanedWeatherText.txt", "w") as output_file:
         for i, des in enumerate(result[0]):
             output_file.writelines(des + "\n")
-    print (result)
+    # print (result)
 
 def weather_category():
     cleaned_weather_text_data = open("./yahooWeather/cleanedWeatherText.txt", "rb")
@@ -32,6 +32,21 @@ def weather_category():
             weather[current_cat].append(weather_str)
     return weather
 
+def temperature_keywords():
+    keywords = open("./yahooWeather/temperature_keywords.txt", "rb")
+    keywords.readline()
+
+    # weather in 4 categories : overcast = [], rain = [], snow = [], sunny = []
+    temperature = [[], []]
+    current_cat = 0
+    for line in keywords:
+        word = line.strip().decode('utf-8')
+        if word == ",":
+            current_cat += 1
+        else:
+            temperature[current_cat].append(word)
+    return temperature
+
 def weather_keywords():
     keywords = open("./yahooWeather/weather_keywords.txt", "rb")
     keywords.readline()
@@ -46,4 +61,5 @@ def weather_keywords():
         else:
             weather[current_cat].append(word)
     return weather
+# print (temperature_keywords())
 # print (weather_category())
